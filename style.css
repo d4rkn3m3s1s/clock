@@ -7,7 +7,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background: -webkit-linear-gradient(#362c5f, #f1b978, #3ee846, #37a5c0);
+    background: -webkit-linear-gradient(#362c5f, #f1b978, #c902db, #37a5c0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 60px;
