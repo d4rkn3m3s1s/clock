@@ -1,5 +1,8 @@
 body {
     background: black;
+    display: grid;
+    height: 100%;
+    place-items: center;
 }
 
 .clock {
@@ -7,9 +10,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background: -webkit-linear-gradient(#362c5f, #f1b978, #c902db, #37a5c0);
+    background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: animate 1.5s linear infinite;
     font-size: 60px;
     font-family: VT323;
     letter-spacing: 7px;
