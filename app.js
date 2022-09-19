@@ -488,6 +488,8 @@ function createFBO (texId, w, h, internalFormat, format, type, param) {
     return [texture, fbo, texId];
 }
 
+
+
 function createDoubleFBO (texId, w, h, internalFormat, format, type, param) {
     let fbo1 = createFBO(texId    , w, h, internalFormat, format, type, param);
     let fbo2 = createFBO(texId + 1, w, h, internalFormat, format, type, param);
