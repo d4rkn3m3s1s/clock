@@ -15,7 +15,7 @@ body {
     -webkit-text-fill-color: transparent;
     animation: animate 1.5s linear infinite;
     font-size: 60px;
-    font-family: VT323;
+    font-family: 'Orbitron', sans-serif;
     letter-spacing: 7px;
    
 
@@ -40,3 +40,141 @@ canvas {
 
 
 
+
+
+
+
+
+
+
+:root{
+    box-sizing: border-box; 
+  }
+  *, *::after, *::before{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: inherit; 
+  }
+  body{
+    background: hsl(0, 0%, 0%);
+    display: grid; 
+    place-items: center; 
+    min-height: 100vh; 
+  }
+  
+  .container{
+    --size: 40vmin; 
+    --circle-size: 4vmin; 
+    
+    width: var(--size); 
+    height: var(--size); 
+  /*   border: 1px solid red;  */
+    border-radius: 50%; 
+    position: relative; 
+  }
+  
+  .circle-container{
+    position: absolute;
+    width: var(--circle-size); 
+    height: var(--size);
+  /*   outline: 1px solid green;  */
+    top: 0; 
+    left: 50%; 
+    --rotate-container: 0;
+    transform: translate(-50%) 
+                rotate(var(--rotate-container, 0));
+    animation: rotateContainer 6s infinite alternate both ease-in-out;
+  }
+  
+  .circle{
+    width: ; 
+    height: var(--circle-size);
+    border: 4px solid #fff;
+    border-radius: 100%;
+    background: radial-gradient(circle at 50% 50%, hsl(360, 100%, 50%), hsl(300, 100%, 50%));
+    box-shadow: 
+                0 0 10px hsl(300, 100%, 50%),
+                0 0 30px hsl(300, 100%, 50%), 
+                0 0 60px hsl(300, 100%, 50%);
+    animation: animate 600ms infinite alternate both ease-in-out;
+  }
+  
+  .circle-container:nth-child(1){
+    --rotate-container: 0deg;
+    animation-delay: 20ms;
+  }
+  .circle-container:nth-child(2){
+     --rotate-container: 45deg;
+    animation-delay: 40ms;
+  }
+  .circle-container:nth-child(3){
+    --rotate-container: 90deg;
+      animation-delay: 60ms;
+  }
+  .circle-container:nth-child(4){
+    --rotate-container: 135deg;
+      animation-delay:80ms;
+  }
+  .circle-container:nth-child(5){
+    --rotate-container: 180deg;
+      animation-delay: 100ms;
+  }
+  .circle-container:nth-child(6){
+    --rotate-container: 225deg;
+      animation-delay: 120ms;
+  }
+  .circle-container:nth-child(7){
+    --rotate-container: 270deg;
+      animation-delay: 140ms;
+  }
+  .circle-container:nth-child(8){
+    --rotate-container: 315deg;
+      animation-delay: 160ms;
+  }
+  
+  .circle-container:nth-child(1) .circle{
+    animation-delay: 50ms;
+  }
+  .circle-container:nth-child(2) .circle{
+    animation-delay: 100ms;
+  }
+  .circle-container:nth-child(3) .circle{
+    animation-delay: 150ms;
+  }
+  .circle-container:nth-child(4) .circle{
+    animation-delay: 200ms;
+  }
+  .circle-container:nth-child(5) .circle{
+    animation-delay: 250ms;
+  }
+  .circle-container:nth-child(6) .circle{
+    animation-delay: 300ms;
+  }
+  .circle-container:nth-child(7) .circle{
+    animation-delay: 350ms;
+  }
+  .circle-container:nth-child(8) .circle{
+    animation-delay: 400ms;
+  }
+  
+  @keyframes animate{
+    0%, 100%{
+      transform: translateY(100) scale(0);
+      filter: hue-rotate(0deg);
+    }
+    50%{
+      transform: translateY(var) scale();
+      filter: hue-rotate(360deg);
+      box-shadow: 
+                0 0 20px hsl(300, 100%, 50%),
+                0 0 60px hsl(300, 100%, 50%), 
+                0 0 120px hsl(300, 100%, 50%);
+    }
+  }
+  
+  @keyframes rotateContainer{
+    to{
+       transform: translate(-50%) 
+                rotate(4turn);
+    }
+  }
