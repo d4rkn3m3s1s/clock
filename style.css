@@ -86,7 +86,7 @@ canvas {
     animation: rotateContainer 6s infinite alternate both ease-in-out;
   }
   
-  .circle{
+  /* .circle{
     width: ; 
     height: var(--circle-size);
     border: 4px solid #fff;
@@ -98,8 +98,8 @@ canvas {
                 0 0 60px hsl(300, 100%, 50%);
     animation: animate 600ms infinite alternate both ease-in-out;
   }
-  
-  .circle-container:nth-child(1){
+   */
+  /* .circle-container:nth-child(1){
     --rotate-container: 0deg;
     animation-delay: 20ms;
   }
@@ -155,7 +155,7 @@ canvas {
   }
   .circle-container:nth-child(8) .circle{
     animation-delay: 400ms;
-  }
+  } */
   
   @keyframes animate{
     0%, 100%{
